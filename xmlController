@@ -1,0 +1,26 @@
+sap.ui.define(				
+	["sap/ui/core/mvc/Controller"],			
+	function(Controller) {			
+		return Controller.extend("mickey.controller.View2", {		
+			anubhav: function() {	
+				window.open("https://tridge.com");
+				alert("xml view's controller is here");
+			},	
+			anubhav2: function() {	
+				//this.anubhav();
+				var oView= this.getView();
+				var oABC= oView.byId("abc");
+				oABC.firePress();
+			},	
+			onTry: function() {	
+				var empid= this.getView().byId("empid").getValue();
+				var empname= this.getView().byId("empname").getValue();
+				var sal= this.getView().byId("sal").getValue();
+				var curr= this.getView().byId("curr").getValue();
+				alert(empid + empname + sal + curr);
+				
+			}	
+		});		
+		//u cant have functions here nor outside this layer		
+	}			
+);				
