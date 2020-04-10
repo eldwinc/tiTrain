@@ -7,8 +7,8 @@ sap.ui.define(
 				alert("xml view's controller is here");
 			},	
 			anubhav2: function() {	
-				//this.anubhav();
-				var oView= this.getView();
+				//this.anubhav();ew= this.
+				var oVigetView();
 				var oABC= oView.byId("abc");
 				oABC.firePress();
 			},	
